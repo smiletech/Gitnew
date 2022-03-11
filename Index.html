@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cricket -Team</title>
+</head>
+<body>
+
+    <div class="cricket-team">  
+        <h1>Cricket Team Maker</h1>
+        <input type="text" id="Name" placeholder='Enter Player Name:-'/>
+        <br/>
+        <button id="neg" onclick=negative()>-</button>
+        <input type='number'id="Age" placeholder='Age' ></input>
+        <button id="pos" onclick=Positive()>+</button>
+      
+
+        <br/>
+          <label name="cricket" id="cricketplayer">select Player Type</label>
+          <br/>
+             <!-- <option value="Batsman">Batsman</option>
+             <option value="Bolwer">Bolwer</option> -->
+             <input type="checkbox" id="Batsman" name="Batsman" onchange=checkBox() value="Batsman"/>
+                <label for="Batsman"> Batsman</label><br>
+              <input type="checkbox" id="Bolwer" name="Bolwer" onchange=checkBox() value="Bolwer"/>
+               <label for="Bolwer"> Bolwer</label><br>
+         
+          <div>
+              <button id="AddPlayer" onClick=PlayerHander()>Add Player</button>
+              <!-- <button id="st" onClick=Start1()>StartTable</button> -->
+            </div>
+         </div>
+
+         <div id="Tb" class="table-btn">
+             
+         </div>
+
+
+
+    <script src="index.js" ></script>
+</body>
+</html>
